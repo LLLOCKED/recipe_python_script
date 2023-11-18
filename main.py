@@ -34,4 +34,4 @@ def recommend_recipes(data, user_input_ingredients, num_recommendations=5):
 
 # main driver function
 if __name__ == '__main__':
-	app.run(host='0.0.0.0')
+	app.run()

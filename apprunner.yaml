@@ -3,9 +3,8 @@ source:
   type: git
   repository: https://github.com/LLLOCKED/recipe_python_script
   branch: main
-  subdirectory: /
 build:
   command: python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
 run:
-  command: gunicorn -b 0.0.0.0:8000 ymain:app
+  command: gunicorn -b 0.0.0.0:8000 main:app
   port: 8000
